@@ -1,0 +1,110 @@
+
+# CyberFiles default theme
+
+# You probably shouldn't edit this file.
+
+# To make a custom theme:
+#   - Create a new .yml file in this directory, or duplicate this one
+#   - Change the 'theme' config option to the name of your new file
+# Once you have your file, any theme variables you set in there will override
+# the ones set here
+
+# Theme metadata
+name: Tbn 
+desc: tbn dark theme.
+
+invis: rgba(0, 0, 0, 0)
+bg: '#1E1E24'
+bg2: "#3f3f45"
+fg: '#f3f3fc'
+fg2: "#9a9aa2"
+accent: "#EF9A9A"
+fileSep: +bg2
+fileH: +bg2
+fileC: "rgba(255, 255, 255, 0.2)"
+bgDirectoryHeader: +bg2
+fgDirectoryHeader: +fg
+directoryHeaderBorder: +accent
+directoryHeaderShadow: rgba(0, 0, 0, 0.2)
+fileListHeaders: +fg2
+fileListHeadersH: +accent
+fileIcon: +fg2
+fileNameCol: +fg
+fileDateCol: +fg2
+fileTypeCol: +fg2
+fileDateMobile: +fg2
+fileSizeCol: +fg2
+fileListFooter: +fg2
+bgScrollbarTrack: rgba(0, 0, 0, 0.1)
+scrollbar: +fg2
+scrollbarH: +fg
+scrollbarC: +accent
+bgTopbar: +accent
+fgTopbar: +bg
+fgTopbarH: +bg2
+bgTopbarButtonH: rgba(0, 0, 0, 0.1)
+bgTopbarButtonC: rgba(0, 0, 0, 0.2)
+topbarBorder: +bg2
+topbarShadow: rgba(0, 0, 0, 0.7);
+fgTextboxPlaceholder: +fg2
+bgFilterBar: +bg
+bgFilterBarBorder: +bg2
+bgFilterBarBorderF: +accent
+bgFilterBarF: +bg2
+fgFilterBar: +fg
+fgFilterBarClear: +fg2
+fgFilterBarClearH: +fg
+fgFilterBarClearC: +accent
+fgFilteredFileName: +accent
+bgPopup: +bg
+fgPopup: +fg
+bgPopupButton: +invis
+fgPopupButton: +accent
+bgPopupButtonH: rgba(163, 231, 252, 0.3)
+bgPopupButtonC: rgba(163, 231, 252, 0.5)
+popupShadow: rgba(0, 0, 0, 0.3)
+bgDropdown: +fg
+bgDropdownH: rgba(0, 0, 0, 0.15)
+bgDropdownC: +fg2
+bgDropdownSep: rgba(0, 0, 0, 0.15)
+fgDropdown: +bg
+fgDropdownD: +bg2
+fgDropdownHeader: +fgDropdownD
+bgToast: +bg2
+fgToast: +fg
+bgToastBorder: +accent
+bgPreview: '#000'
+bgPreviewTopbar: +bg
+bgPreviewH: rgba(255, 255, 255, 0.1)
+bgPreviewC: rgba(255, 255, 255, 0.2)
+previewTopbarBorder: +bgPreviewTopbar
+previewTopbarShadow: +topbarShadow
+fgPreview: +fg
+fg2Preview: +fg
+fgPreviewH: +accent
+fgPreviewIcon: +accent
+bgPreviewNav: +bg
+fgPreviewNav: +fg
+bgPreviewNavH: +bg2
+fgPreviewNavH: +accent
+bgPreviewNavC: +bg2
+fgPreviewNavC: +fg2
+bgTextPreview: +bg
+fgTextPreview: +fg
+bgMarkdownCode: rgba(0, 0, 0, 0.25)
+bgMarkdownBlockquote: rgba(0, 0, 0, 0.15)
+hyperlink: +accent
+hyperlinkH: +fg2
+bgTooltip: +fg
+fgTooltip: +bg
+bgButton: +accent
+fgButton: +bg
+bgButtonH: +fg
+fgButtonH: +bg
+bgButtonC: +fg2
+fgButtonC: +bg
+loadingSpinner: +accent
+browserTheme: +bgTopbar
+browserThemePreview: +bgPreviewTopbar
+textHighlightBg: +accent
+textHighlightFg: +bg
