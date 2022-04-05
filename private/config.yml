@@ -10,7 +10,7 @@
 language: en
 siteName: ''
 siteDesc: "Browse and preview server files with ease."
-theme: Default
+theme: tbn-red
 hiddenFiles:
   - '*.php'
   - 'index.html'
