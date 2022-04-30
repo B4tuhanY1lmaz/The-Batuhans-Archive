@@ -8,8 +8,8 @@
 
 # General settings
 language: en
-siteName: ''
-siteDesc: "Browse and preview server files with ease."
+siteName: "Tbn Archive"
+siteDesc: "The Batuhan's network public web archive. Contains the stuff that I have collected over the years."
 theme: tbn-red
 hiddenFiles:
   - '*.php'
@@ -22,6 +22,7 @@ hideDirWhenContains:
   - 'index.php'
   - 'index.html'
   - '_cf_hideFromList'
+  - 'xxx'  
 headerFileNameMarkdown: _cf_header.md
 headerFileNameHtml: _cf_header.html
 hideContentsFile: _cf_hideContents
@@ -52,9 +53,9 @@ videoProgressSave:
 generateThumbs: true
 commands:
   thumbImage: 'convert -define png:size=196x196  -background none "%0"  -thumbnail 196x196^ -gravity center -extent 196x196  "%1"'
-  thumbVideo: 'ffmpeg -i "%0" -ss 00:00:01.000 -vframes 1 "%1"'
+  thumbVideo: 'ffmpeg -i "%0" -ss 00:00:10.000 -vframes 1 "%1"'
 textPreviewMaxSize: 1000000
 shortLinkSlugLength: 8
 chunkInterval: 5
-logTimezone: America/Chicago
+logTimezone: Europe/Dublin
 logUserIpHeader: REMOTE_ADDR
