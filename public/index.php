@@ -116,6 +116,12 @@ while (isset($_GET['f'])) {
     <meta name="twitter:card" content="player">
     <meta name="twitter:image" content="<?= $thumbUrl ?>">
     <meta name="twitter:player" content="https://vid.simplecyber.org/player/?src=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvODMyODM1MjAwODAyNDg4MzUxLzkzMDkwNTQyNjk0NDQ3NTE0Ni9lbXBpcmVfZHJpcC5tcDQ=">
+  <?php elseif (preg_match("/(MKV)/", $fileExt)) : ?>
+    <meta name="og:type" content="video/mp4">
+    <meta name="og:image" content:"<?= $thumbUrl ?>">
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:image" content="<?= $thumbUrl ?>">
+    <meta name="twitter:player" content="https://vid.simplecyber.org/player/?src=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvODMyODM1MjAwODAyNDg4MzUxLzkzMDkwNTQyNjk0NDQ3NTE0Ni9lbXBpcmVfZHJpcC5tcDQ=">
   <?php elseif (preg_match("/(PNG|JPG|JPEG|GIF)/", $fileExt)) : ?>
     <meta name="og:type" content="image">
     <meta name="og:image" content="<?= $fullFileUrl ?>">
