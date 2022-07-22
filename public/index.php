@@ -62,8 +62,13 @@ if ($dirRel == '') $webConf['pageTitle'] = $conf['siteName'];
 $filePath = '';
 while (isset($_GET['f'])) {
   $path = clean_path($dir . '/' . $_GET['f']);
-  $fullFileUrl = "https://" . $_SERVER['HTTP_HOST'] . str_replace("%2F", '/', rawurlencode(clean_path($dirRel . '/' . $_GET['f'])));
-  $thumbUrl = "https://" . $_SERVER['HTTP_HOST'] . "/_cyberfiles/public/thumbs/" . md5($path) . ".png";
+  if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+    $fullFileUrl = "https://" . $_SERVER['HTTP_HOST'] . str_replace("%2F", '/', rawurlencode(clean_path($dirRel . '/' . $_GET['f'])));
+    $thumbUrl = "https://" . $_SERVER['HTTP_HOST'] . "/_cyberfiles/public/thumbs/" . md5($path) . ".png";
+  if(isset($_SERVER['HTTP']) && $_SERVER['HTTP'] === 'on')
+    $fullFileUrl = "http://" . $_SERVER['HTTP_HOST'] . str_replace("%2F", '/', rawurlencode(clean_path($dirRel . '/' . $_GET['f'])));
+    $thumbUrl = "http://" . $_SERVER['HTTP_HOST'] . "/_cyberfiles/public/thumbs/" . md5($path) . ".png";
+
   if (!file_exists($path)) break;
   if (is_dir($path)) break;
   $webConf['pageTitle'] = urldecode($_GET['f']);
