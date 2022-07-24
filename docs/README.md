@@ -49,10 +49,11 @@ This is the new root of your website. We're about to put CyberFiles here.
 * Extract the downloaded .zip file into `_cyberfiles`
 
 ### Set up the webserver
-Install Apache, PHP, and the PHP YAML extension if you haven't already:
+Install Apache, SQLite3, PHP, and the PHP YAML extension if you haven't already:
+Installing SQLite3 and imagemagick is optional but it's recommended for a better experience.
 ```sh
 sudo apt update
-sudo apt install apache2 php php-yaml -y
+sudo apt install apache2 php php-yaml sqlite3 php-sqlite3 imagemagick -y
 ```
 Create a new Apache configuration file:
 ```sh
