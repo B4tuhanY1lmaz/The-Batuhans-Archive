@@ -50,6 +50,7 @@ This is the new root of your website. We're about to put CyberFiles here.
 
 ### Set up the webserver
 Install Apache, SQLite3, PHP, and the PHP YAML extension if you haven't already:
+
 Installing SQLite3 and imagemagick is optional but it's recommended for a better experience.
 ```sh
 sudo apt update
